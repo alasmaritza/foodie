@@ -16,4 +16,5 @@
 //= require popper
 //= require tether
 //= require bootstrap-sprockets
+//= require paginationjs
 //= require_tree .

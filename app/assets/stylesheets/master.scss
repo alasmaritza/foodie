@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline|Modak');
+@import "font-awesome";
 
 body {
     background: image_url('sakura.png');
@@ -49,4 +50,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .box p {
     color: white;
+}
+
+.control-label {
+    color:white;
 }
