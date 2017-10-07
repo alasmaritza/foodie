@@ -1,0 +1,52 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline|Modak');
+
+body {
+    background: image_url('sakura.png');
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+.navbar {
+    background: image_url('pink_dust.png');
+    box-shadow: 0px 1px 3px #dba6a6;
+}
+
+.navbar-inverse .navbar-brand {
+    color:#fff2f2;
+    font-weight: 150;
+    /*letter-spacing: -0.3px;*/
+    font-family: 'Modak';
+    font-size: 50px;
+}
+
+.box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  border-radius: 10px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color:#3a3535;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding:0;
+}
+
+.box h1, .box .address {
+    text-align:center;
+}
+
+.box h1 {
+    font-family: 'yew_basturdnormal';
+    color:#fff2f2;
+}
+
+.box p {
+    color: white;
+}
