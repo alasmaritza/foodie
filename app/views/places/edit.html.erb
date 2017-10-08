@@ -1,4 +1,4 @@
-<div class="box col-6 offset-3">
+<div class="box col-6 offset-3 container">
 <h1>Edit Your Place:</h1>
 <%= simple_form_for @place do |f| %>
 <%= f.input :name, class: 'input' %>
@@ -7,5 +7,8 @@
 <br>
 <%= f.submit 'Update', class: 'btn btn-edit' %>
 <%= link_to 'Delete', place_path(@place), method: :delete, data: {confirm:'Are you sure you want to delete?'}, class: 'btn btn-danger' %>
+<div class='float-right'>
+<%= link_to 'Cancel', root_path, class: 'btn btn-edit' %>
+</div>
 <% end %>
 </div>
