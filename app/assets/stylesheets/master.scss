@@ -20,6 +20,20 @@ body {
     font-size: 50px;
 }
 
+.form-control {
+    background-color: #fff2f2;
+}
+
+.form-control:focus {
+    background-color: #fff2f2;
+    border-color:#27c2c7;
+}
+
+a, a:hover {
+    color: #3a3535;
+    text-decoration:none;
+}
+
 .box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -32,6 +46,17 @@ body {
   margin-bottom: 10px;
   padding: 20px;
   background-color:#3a3535;
+}
+
+input.btn {
+    background-color:#3a3535;
+    color:white;
+}
+
+.logIn h2 {
+    padding-top:20px;
+    font-family: 'yew_basturdnormal';
+    color:#3a3535;
 }
 
 h1, h2, h3, h4, h5, h6 {
