@@ -1,0 +1,9 @@
+<div class="col-10 offset-1 container box">
+<h1><%= @place.name %></h1>
+<p class='address'><%= @place.address %></p>
+<br>
+<p><%= @place.description %></p>
+<div class='col-1 offset-11'>
+    <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-edit' %>
+</div>
+</div>

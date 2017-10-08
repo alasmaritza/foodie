@@ -73,10 +73,19 @@ h1, h2, h3, h4, h5, h6 {
     color:#fff2f2;
 }
 
+.box .placeName a {
+    color: #fff2f2;
+}
+
 .box p {
     color: white;
 }
 
 .control-label {
     color:white;
+}
+
+.btn-edit, input.btn-edit {
+    background-color:white;
+    color:#3a3535;
 }
