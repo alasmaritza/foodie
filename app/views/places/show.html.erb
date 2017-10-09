@@ -4,6 +4,8 @@
 <br>
 <p><%= @place.description %></p>
 <div class='col-1 offset-11'>
+    <% if current_user && current_user == @place.user %>
     <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-edit' %>
+    <% end %>
 </div>
 </div>

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline|Modak');
 @import "font-awesome";
 
-body {
+body, .form-control {
     background: image_url('sakura.png');
     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
@@ -20,9 +20,9 @@ body {
     font-size: 50px;
 }
 
-.form-control {
+/*.form-control {
     background-color: #fff2f2;
-}
+}*/
 
 .form-control:focus {
     background-color: #fff2f2;
@@ -48,9 +48,11 @@ a, a:hover {
   background-color:#3a3535;
 }
 
-input.btn {
+input.btn, .btn {
     background-color:#3a3535;
     color:white;
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    cursor:pointer;
 }
 
 .logIn h2 {
@@ -88,4 +90,8 @@ h1, h2, h3, h4, h5, h6 {
 .btn-edit, input.btn-edit {
     background-color:white;
     color:#3a3535;
+}
+
+input.btn-edit:hover {
+    cursor:pointer;
 }
