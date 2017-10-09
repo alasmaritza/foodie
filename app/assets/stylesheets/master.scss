@@ -95,3 +95,11 @@ h1, h2, h3, h4, h5, h6 {
 input.btn-edit:hover {
     cursor:pointer;
 }
+
+.help-block {
+    background-color:rgba(247, 27, 27, 0.4);
+    color: white;
+    border-radius: 5px;
+    padding: 2px 8px 2px 8px;
+    margin-top: 5px;
+}
