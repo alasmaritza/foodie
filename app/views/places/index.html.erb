@@ -1,3 +1,27 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <%= image_tag 'cafe.jpg', class: 'd-block img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Find the best cafes</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'Pizza-Parlor.jpg', class: 'd-block img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>And the best pizza parlors</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'BurgerJoint.jpg', class: 'd-block img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>And the best burger joints</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <% @places.each do |place| %>
 <div class="box col-10 offset-1">
     <h1 class="placeName"><%= link_to place.name, place_path(place) %></h1>

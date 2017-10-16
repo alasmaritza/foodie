@@ -130,3 +130,14 @@ blockquote:before {
 blockquote p {
     display:inline;
 }
+
+.img-fluid {
+    max-height: 500px;
+    margin:auto;
+}
+
+.carousel-caption {
+    font-family:'yew_basturdnormal';
+    font-weight: 100;
+   /* text-shadow: rgba(255, 242, 242, 0.95) 2px 2px;*/
+}
