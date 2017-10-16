@@ -1,0 +1,41 @@
+<div class="col-10 offset-1 container box">
+<h1 class="userName"><%= @user.email %></h1>
+<hr>
+<div class="row">
+    <div class="col-sm-5">
+  <%= image_tag 'user.png', class: 'user' %>      
+    </div>
+<div class="col-sm-7">
+    <p>User Since: <%= @user.created_at.strftime("%b, %Y") %></p>
+<p>Comments: <%= @user.comments.count %></p>
+<p>5 Star Reviews: <%= @user.comments.where(rating: '5_stars').count %></p>
+</div>
+</div>
+<h2 class="text-center">My Comments</h2>
+<br>
+<div class="row">
+<% @user.comments.each do |comment| %>
+<div class="col-10 col-sm-5 offset-1">
+    <h2><%= link_to comment.place.name, place_path(comment.place) %></h2>
+  <blockquote>
+    <% if comment.humanized_rating.present? %>
+    <b><%= comment.humanized_rating %></b> -
+    <% end %>
+    <%= comment.message %>
+    <small><%= comment.user.email %></small>
+  </blockquote>
+</div>
+<% end %>
+</div>
+
+ <h2 class="text-center">My Places</h2>
+<div class="row">
+    <% @user.places.each do |place| %>
+    <div class="box inner col-10 offset-1">
+    <h3 class="placeName text-center"><%= link_to place.name, place_path(place) %></h3>
+    <p class="address"><i><%= place.address %></i></p><br><br>
+    <p><%= place.description %></p><br>
+    </div>
+    <% end %>
+</div>
+</div>

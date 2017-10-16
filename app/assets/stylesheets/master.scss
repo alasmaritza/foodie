@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5, h6 {
     text-align:center;
 }
 
+.box .userName {
+    font-family: 'Modak';
+}
+
 .box h1 {
     font-family: 'yew_basturdnormal';
     color:#fff2f2;
@@ -77,9 +81,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .box .placeName a {
     color: #fff2f2;
+    font-family: 'yew_basturdnormal';
 }
 
-.box p {
+.box p, .box h2, .box h3, .box, .box a {
     color: white;
 }
 
@@ -140,4 +145,13 @@ blockquote p {
     font-family:'yew_basturdnormal';
     font-weight: 100;
    /* text-shadow: rgba(255, 242, 242, 0.95) 2px 2px;*/
+}
+
+.user {
+   background: image_url('sakura.png');
+   border-radius: 5px;
+}
+
+hr {
+     border-color:#fff2f2;
 }
