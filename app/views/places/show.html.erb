@@ -84,6 +84,24 @@
 
 </div>
 
+<div class="col-10 offset-1 container">
+  <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+  <%= f.input :caption %>
+  <%= f.input :image %>
+  <%= f.submit "Add an Image", class: "btn btn-primary" %>
+  <% end %>
+</div>
+
+<hr>
+<h2>Images</h2>
+<div class="row">
+<% @place.photos.each do |photo| %>
+            <%= image_tag photo.picture, class: 'img-fluid center-block' %>
+    </div>
+       <p class="float-right col-6"> <%= photo.caption %></p>
+    <% end %>
+</div>
+
 </div>
 
 
