@@ -86,3 +86,4 @@ production:
   database: foodie_production
   # username: foodie
   # password: <%= ENV['FOODIE_DATABASE_PASSWORD'] %>
+
