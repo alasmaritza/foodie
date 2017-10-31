@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
     color:white;
 }
 
-.btn-edit, input.btn-edit {
+.btn-edit, input.btn-edit, a.btn.btn-edit {
     background-color:white;
     color:#3a3535;
 }
@@ -154,4 +154,8 @@ blockquote p {
 
 hr {
      border-color:#fff2f2;
+}
+
+.place-image {
+    width:100%;
 }

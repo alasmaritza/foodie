@@ -1,7 +1,10 @@
 class Photo < ApplicationRecord
+    mount_uploader :image, ImageUploader
     
-    belongs_to :user
+   # belongs_to :user
     belongs_to :place
     
-    mount_uploader :image, ImageUploader
+    validates :image, presence: true
+    validates :caption, length: {maximum: 100}
+
 end

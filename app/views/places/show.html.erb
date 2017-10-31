@@ -82,24 +82,47 @@
   New Comment
 </button>
 
+<button type="button" class="btn btn-edit" data-toggle="modal" data-target="#myImageModal">Upload Image</button>
+
 </div>
 
-<div class="col-10 offset-1 container">
-  <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
-  <%= f.input :caption %>
-  <%= f.input :image %>
-  <%= f.submit "Add an Image", class: "btn btn-primary" %>
-  <% end %>
+
+<!--Image Modal -->
+<div class="modal fade" id="myImageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add a Comment</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+          <%= f.input :caption %>
+          <%= f.input :image %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <%= f.submit "Add an Image", class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
+
 
 <hr>
 <h2>Images</h2>
 <div class="row">
-<% @place.photos.each do |photo| %>
-            <%= image_tag photo.picture, class: 'img-fluid center-block' %>
-    </div>
-       <p class="float-right col-6"> <%= photo.caption %></p>
-    <% end %>
+ <% if @place.photos.present? %>
+              <% @place.photos.each do |photo| %>
+              <div class="col-3">
+  <%= image_tag photo.image, class: "place-image" %>
+  <%= photo.caption %>
+  </div>
+<% end %>
+<% end %>
 </div>
 
 </div>
