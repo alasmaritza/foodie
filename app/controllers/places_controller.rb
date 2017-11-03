@@ -59,6 +59,7 @@ class PlacesController < ApplicationController
     private
     
     def place_params
-        params.require(:place).permit(:name,:description,:address,:picture)
+        params.require(:place).permit(:name,:description,:address,:image)
+        #changed last permit to image, from picture
     end
 end
